@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose",
     "start": "nodemon",
     "mongo": "mkdir -p ./.db && mongod --dbpath ./.db",
