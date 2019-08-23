@@ -5,6 +5,8 @@ require('dotenv').config();
 
 //need server start
 const server = require('./lib/server');
+// eslint-disable-next-line no-unused-vars
+const swagger = require('./docs/swagger');
 
 //connect mongoose to mongo
 const mongoose = require('mongoose');

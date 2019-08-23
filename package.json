@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose",
     "start": "nodemon",
-    "mongo": "mkdir -p ./.db && mongod --dbpath ./.db"
+    "mongo": "mkdir -p ./.db && mongod --dbpath ./.db",
+    "lint": "eslint \"**/*.js\""
   },
   "jest": {
     "testEnvironment": "node"
@@ -26,5 +27,9 @@
     "morgan": "^1.9.1",
     "supertest": "^4.0.2",
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "express-swagger-generator": "^1.1.15",
+    "jsdoc": "^3.6.3"
   }
 }
