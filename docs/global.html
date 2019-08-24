@@ -179,6 +179,10 @@ testing a Mongoose API
 
 
 
+<div class="description">
+    Creates a new record to the db
+</div>
+
 
 
 
@@ -292,7 +296,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routes_crudAPI.js.html">lib/routes/crudAPI.js</a>, <a href="lib_routes_crudAPI.js.html#line60">line 60</a>
+        <a href="lib_routes_crudAPI.js.html">lib/routes/crudAPI.js</a>, <a href="lib_routes_crudAPI.js.html#line58">line 58</a>
     </li></ul></dd>
     
 
@@ -320,6 +324,10 @@ testing a Mongoose API
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    the query
+</div>
+
 
 
     
@@ -730,6 +738,10 @@ testing a Mongoose API
 
 
 
+<div class="description">
+    Queries database by request's ID query
+</div>
+
 
 
 
@@ -843,7 +855,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_routes_crudAPI.js.html">lib/routes/crudAPI.js</a>, <a href="lib_routes_crudAPI.js.html#line44">line 44</a>
+        <a href="lib_routes_crudAPI.js.html">lib/routes/crudAPI.js</a>, <a href="lib_routes_crudAPI.js.html#line43">line 43</a>
     </li></ul></dd>
     
 
@@ -871,6 +883,10 @@ testing a Mongoose API
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    record by ID or all records if no ID
+</div>
+
 
 
     
@@ -1069,6 +1085,347 @@ adds a model property to the request object that can be used by CRUD functions a
     
 
     
+    <h4 class="name" id="putHandler"><span class="type-signature"></span>putHandler<span class="signature">(request, response)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    checks request method = put and if parameters exist and if request query id exists
+if param request = update or delete, passes control to those functions
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_routes_crudAPI.js.html">lib/routes/crudAPI.js</a>, <a href="lib_routes_crudAPI.js.html#line101">line 101</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    the return from either update or remove functions
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="remove"><span class="type-signature"></span>remove<span class="signature">(request, response)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Removes a record by request query ID
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_routes_crudAPI.js.html">lib/routes/crudAPI.js</a>, <a href="lib_routes_crudAPI.js.html#line86">line 86</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    the deleted item
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="requestInfo"><span class="type-signature"></span>requestInfo<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
     
 
@@ -1247,6 +1604,176 @@ adds a model property to the request object that can be used by CRUD functions a
 
 
         
+            
+
+    
+
+    
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(request, response)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Takes request query ID and updates with an updated property passed in the request body
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_routes_crudAPI.js.html">lib/routes/crudAPI.js</a>, <a href="lib_routes_crudAPI.js.html#line72">line 72</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    the updated record
+</div>
+
+
+
+    
+
+
+
+
+
+        
     
 
     
@@ -1262,13 +1789,13 @@ adds a model property to the request object that can be used by CRUD functions a
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#createNew">createNew</a></li><li><a href="global.html#error404">error404</a></li><li><a href="global.html#errorHandler">errorHandler</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#modelLoader">modelLoader</a></li><li><a href="global.html#mongoose">mongoose</a></li><li><a href="global.html#requestInfo">requestInfo</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#createNew">createNew</a></li><li><a href="global.html#error404">error404</a></li><li><a href="global.html#errorHandler">errorHandler</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#modelLoader">modelLoader</a></li><li><a href="global.html#mongoose">mongoose</a></li><li><a href="global.html#putHandler">putHandler</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#requestInfo">requestInfo</a></li><li><a href="global.html#update">update</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Fri Aug 23 2019 17:18:31 GMT-0700 (Pacific Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Fri Aug 23 2019 17:36:49 GMT-0700 (Pacific Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
