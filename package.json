@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose",
-    "start": "nodemon",
+    "watch": "nodemon index.js",
+    "start": "node index.js",
     "mongo": "mkdir -p ./.db && mongod --dbpath ./.db",
     "lint": "eslint \"**/*.js\"",
     "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
