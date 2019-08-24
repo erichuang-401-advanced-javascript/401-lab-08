@@ -8,7 +8,8 @@
     "test-watch": "jest --watchAll --verbose",
     "start": "nodemon",
     "mongo": "mkdir -p ./.db && mongod --dbpath ./.db",
-    "lint": "eslint \"**/*.js\""
+    "lint": "eslint \"**/*.js\"",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "jest": {
     "testEnvironment": "node"
