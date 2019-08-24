@@ -8,7 +8,8 @@
     "test-watch": "jest --watchAll --verbose",
     "start": "nodemon",
     "mongo": "mkdir -p ./.db && mongod --dbpath ./.db",
-    "lint": "eslint \"**/*.js\""
+    "lint": "eslint \"**/*.js\"",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "jest": {
     "testEnvironment": "node"
@@ -29,6 +30,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "eslint": "^6.2.1",
     "express-swagger-generator": "^1.1.15",
     "jsdoc": "^3.6.3"
   }
